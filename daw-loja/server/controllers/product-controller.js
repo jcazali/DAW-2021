@@ -1,4 +1,4 @@
-const repository = require('../models/group-repository');
+const repository = require('../models/product-repository');
 
 module.exports = {
 
@@ -17,11 +17,11 @@ module.exports = {
 
     create: async (req, res) => {
 
-        const group = req.body;
+        const product = req.body;
 
         try {
 
-            const result = await repository.create(group);
+            const result = await repository.create(product);
             return res.status(201).json(result);
 
         } catch (error) {
@@ -47,7 +47,7 @@ module.exports = {
     },
 
     update: async (req, res) => {
-        const group = req.body;
+        const product = req.body;
 
         try {
 
@@ -57,9 +57,9 @@ module.exports = {
                 return res.status(404).json({ message: 'Not found' });
             }
 
-            await repository.update(group);
+            await repository.update(product);
 
-            return res.json(group)
+            return res.json(product)
 
         } catch (error) {
             return res.status(500).json({ message: error.message })
