@@ -33,43 +33,9 @@ header nav li{
     justify-content: center;
 }
 
-.collection .card{
-    position: relative;
-    height: 440px;
-    overflow: hidden;
-}
-
-.collection .card img{
-    height: 440px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    
-}
-
-
-.collection .card-body{
-    position: absolute;
-    background-color: #fff;
-    height: 150px;
-    text-align: center;
-    bottom: 0;  
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-.collection .card-body h4,
-.collection .card-body h5 {
-    text-transform: uppercase;
-}
-
 .products .card-body h5,
 .collection .card-body h5 {
     font-weight: 400;
-    text-align: center;
-}
-
-.collection .card-body p {
-    margin-top: 10px;
     text-align: center;
 }
 
@@ -88,6 +54,7 @@ header nav li{
     justify-content: space-between;
     margin-top: 32px;
 }
+
 .products .details .price{
     display: flex;
     flex-direction: column;
@@ -119,6 +86,7 @@ header nav li{
     align-items: center;
     gap: 16px;
 }
+
 .newsletter form input{
     width: 300px;
 }
@@ -127,50 +95,4 @@ header nav li{
     background-color: #a237cc;
     border-color: #a237cc;
     text-transform: uppercase;
-}
-
-.brands ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    list-style: none;
-}
-
-.brands ul li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    align-items: center;  
-    list-style: none;
-}
-
-footer {
-    background-color: #515d6a;
-    padding: 48px 0;
-    color: white;
-}
-
-footer .container col {
-    justify-content: center;
-}
-
-footer h5 {
-    margin: 0 0 32px 48px;
-}
-
-footer ul {
-    list-style: none;
-    margin-left: 16px;
-}
-
-footer li a{
-    color: white;
-    text-decoration: none;
-}
-
-footer li a:hover{
-    color: white;
 }
