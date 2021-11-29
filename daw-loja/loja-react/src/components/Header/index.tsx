@@ -1,7 +1,7 @@
 import './style.css';
 
 export function Header() {
-    return (
+    return ( 
         <header className="navbar navbar-expand-lg navbar-light">
             <div className="container">
                 <h1 className="navbar-brand"> DAW Loja </h1>

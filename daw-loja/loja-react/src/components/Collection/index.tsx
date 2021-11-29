@@ -4,7 +4,7 @@ import imgCollection2 from "../../assets/images/collection2.jpg"
 import imgCollection3 from "../../assets/images/collection3.jpg"
 import imgCollection4 from "../../assets/images/collection4.jpg"
 
-import"./style.css"
+import "./style.css"
 
 export function Collection() {
     return (

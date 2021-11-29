@@ -30,3 +30,16 @@
     margin-top: 10px;
     text-align: center;
 }
+
+.collection{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 32px 0;
+    justify-content: center;
+}
+
+.collection .card-body h5 {
+    font-weight: 400;
+    text-align: center;
+}
