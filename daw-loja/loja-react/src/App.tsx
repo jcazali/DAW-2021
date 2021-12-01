@@ -4,6 +4,8 @@ import { Header } from "./components/Header";
 import { Products } from "./components/Products";
 import { NewsLetter } from "./components/NewsLetter";
 import { Footer } from "./components/Footer";
+import React, { useEffect, useState } from "react";
+import axios from "axios"
 
 function App() {
   const brands = [
@@ -12,7 +14,19 @@ function App() {
     {alt: 'imagem3', source:'assets/images/brand3.png'},
     {alt: 'imagem4', source:'assets/images/brand4.png'},
     {alt: 'imagem5', source:'assets/images/brand5.png'}
-  ];
+  ];  
+
+  const [products, setProducts] = useState<Product[]>([] as Product[]);
+
+  useEffect(() => {
+    axios.get('http://localhost:3333/Products')
+    .then(result => {
+      setProducts (result.data);
+    })
+    .catch(error => {
+      console.log('Puts', error)
+    })
+  }, [])
 
   return (
     <div className="App"> 
@@ -30,7 +44,7 @@ function App() {
             </div>
           </div>
           <Collection />|
-          <Products />
+          <Products items={products} />
           <NewsLetter />       
         </div>
 
